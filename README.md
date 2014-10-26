@@ -5,4 +5,6 @@ The app will locate you and will return your current location, with a given accu
 
 A PoC to play with MongoDB's geo-functions and LeafLet maps. The web has been built with Flask.
 
+The code is prepared to be executed in openshift.
+
 The code must be running in: http://airports-dollbox.rhcloud.com/
