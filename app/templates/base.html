@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Where is my Airport?</title>
+    <link href="{{ url_for('.static', filename = 'css/map_style.css') }}" rel="stylesheet" >
+    <link href="{{ url_for('.static', filename = 'css/leaflet.css') }}" rel="stylesheet">
+    <script src="{{ url_for('.static', filename = 'js/leaflet.js') }}"></script>
+    <script src="{{ url_for('.static', filename = 'js/leaflet-src.js') }}"></script>
+    <script src="{{ url_for('.static', filename = 'js/map.js') }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="map"></div>
+{% block script %} {% endblock %}
+</body>
+</html>
