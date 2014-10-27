@@ -92,8 +92,12 @@ function onLocationClosest(e)
 	xmlhttp.setRequestHeader('Content-Type', 'application/json');
 	xmlhttp.onreadystatechange = handleStateChange(xmlhttp);
 
+	var geolocation = {};
+	geolocation['accuracy'] = e['accuracy'];
+	geolocation['latlng'] = e['latlng'];
+
 	seen = [];
-	xmlhttp.send(JSON.stringify(e,function(key, val) 
+	xmlhttp.send(JSON.stringify(geolocation, function(key, val) 
 	{
 		if (val != null && typeof val == "object") {
 			if (seen.indexOf(val) >= 0)
