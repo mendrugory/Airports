@@ -48,7 +48,7 @@ function onLocationFound(e)
 function markAirports(airports)
 {
 	var airportIcon = L.icon({
-    	iconUrl: '/static/js/images/airport.png',
+    	iconUrl: '/static/images/airport.png',
     	iconSize: [50, 50],
     	iconAnchor: [25, 25],
     	popupAnchor: [-3, -76],
